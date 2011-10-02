@@ -31,6 +31,9 @@ Parses the following statements:
 
     mattr_accessor :attr
 
+If you know of more Rails-specific DSL that should be included in this plugin,
+feel free to create an issue here on GitHub, and I'll be happy to include it.
+
 ## Requirements
 
 * [yard](http://yardoc.org) >= 0.4.0
