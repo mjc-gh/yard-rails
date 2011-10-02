@@ -1,0 +1,7 @@
+pkg
+doc
+tmp
+.DS_Store
+.bundle
+.yardoc
+*~

@@ -1,0 +1,9 @@
+class SimpleCattrs
+  cattr_reader :num_widgets
+  cattr_writer :widget_destination
+  cattr_accessor :widget_type
+
+  mattr_reader :num_sprockets
+  mattr_writer :sprocket_destination
+  mattr_accessor :sprocket_type
+end
