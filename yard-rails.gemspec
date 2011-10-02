@@ -35,7 +35,8 @@ Gem::Specification.new do |s|
     "spec/helpers/examples.rb",
     "spec/helpers/examples/simple_cattrs.rb.txt",
     "spec/spec_helper.rb",
-    "tasks/yard.rb"
+    "tasks/yard.rb",
+    "yard-rails.gemspec"
   ]
   s.homepage = "http://github.com/cpence/yard-rails"
   s.licenses = ["MIT"]
