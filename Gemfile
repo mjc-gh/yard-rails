@@ -5,6 +5,7 @@ gem 'yard', :group => [:development, :runtime]
 group(:development) do
   gem 'rake'
   gem 'jeweler'
+  gem 'gemcutter'
 end
 
 group(:doc) do
