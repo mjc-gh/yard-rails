@@ -8,8 +8,12 @@
 
 A YARD plugin for parsing the custom Ruby syntax added by Rails.
 
-Once yard-rails is installed, YARD will automatically load the plugin whenever
-the `yardoc` utility is run on a project.
+If you are using YARD >= 0.6, you will need to enable the plugin manually.  Add
+the following line to your `.yardopts` file:
+
+    --plugin yard-rails
+
+For older versions of YARD, all plugins are loaded automatically.
 
 ## Features
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Charles H. Pence"]
   s.date = "2011-10-02"
-  s.description = "Once yard-rails is installed, YARD will automatically load the plugin whenever the `yardoc` utility is run on a project."
+  s.description = "Rails includes several bits of custom markup (such as the new \"cattr_*\" methods).  This plugin for YARD adds support for this custom markup, which otherwise is parsed incorrectly."
   s.email = "charles@charlespence.net"
   s.extra_rdoc_files = [
     "ChangeLog.md",
