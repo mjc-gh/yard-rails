@@ -25,9 +25,6 @@ end
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:rspec) do |spec|
-  # The automatic bundler detecton causes trouble on my
-  # development machine.
-  spec.skip_bundler = true
   spec.rspec_opts = ['--options', '.specopts']
 end
 

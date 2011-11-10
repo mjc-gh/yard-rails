@@ -19,6 +19,8 @@ For older versions of YARD, all plugins are loaded automatically.
 
 Parses the following statements:
 
+    attr_accessible :attr
+
     cattr_reader :attr
 
     cattr_writer :attr

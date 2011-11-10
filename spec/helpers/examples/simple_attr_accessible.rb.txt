@@ -1,0 +1,3 @@
+class SimpleAttrAccessible
+  attr_accessible :test_attribute
+end
