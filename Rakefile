@@ -22,6 +22,7 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ['Charles H. Pence']
   gem.has_rdoc = 'yard'
 end
+Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:rspec) do |spec|
