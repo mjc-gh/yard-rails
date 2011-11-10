@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "yard-rails"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Charles H. Pence"]
-  s.date = "2011-10-02"
+  s.date = "2011-11-10"
   s.description = "Rails includes several bits of custom markup (such as the new \"cattr_*\" methods).  This plugin for YARD adds support for this custom markup, which otherwise is parsed incorrectly."
   s.email = "charles@charlespence.net"
   s.extra_rdoc_files = [
@@ -29,10 +29,14 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/yard-rails.rb",
+    "lib/yard-rails/attr_accessible_handler.rb",
     "lib/yard-rails/class_attribute_handler.rb",
+    "lib/yard-rails/legacy/attr_accessible_handler.rb",
     "lib/yard-rails/legacy/class_attribute_handler.rb",
+    "spec/attr_accessible_handler_spec.rb",
     "spec/class_attribute_handler_spec.rb",
     "spec/helpers/examples.rb",
+    "spec/helpers/examples/simple_attr_accessible.rb.txt",
     "spec/helpers/examples/simple_cattrs.rb.txt",
     "spec/spec_helper.rb",
     "tasks/yard.rb",
@@ -52,12 +56,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<yard>, [">= 0"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_development_dependency(%q<gemcutter>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
       s.add_dependency(%q<yard>, [">= 0"])
       s.add_dependency(%q<yard>, [">= 0"])
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<gemcutter>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
     end
   else
@@ -65,6 +71,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<yard>, [">= 0"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<gemcutter>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
   end
 end
