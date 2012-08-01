@@ -3,6 +3,7 @@ module YARD
   module Rails
     class AttrAccessibleHandler < YARD::Handlers::Ruby::AttributeHandler
       handles method_call(:attr_accessible)
+      handles method_call(:attr_protected)
       namespace_only
       
       def process

@@ -3,7 +3,7 @@ module YARD
   module Rails
     module Legacy
       class AttrAccessibleHandler < YARD::Handlers::Ruby::Legacy::AttributeHandler
-        handles /\Aattr_accessible(?:\s|\()/
+        handles /\Aattr_(accessible|protected)(?:\s|\()/
         namespace_only
         
         def process

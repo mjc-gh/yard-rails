@@ -1,3 +1,5 @@
 class SimpleAttrAccessible
   attr_accessible :test_attribute
+
+  attr_protected :other_attribute
 end
