@@ -30,6 +30,7 @@ RSpec::Core::RakeTask.new(:rspec) do |spec|
 end
 
 task :test => :rspec
+task :spec => :rspec
 task :default => :rspec
 
 require 'yard'
