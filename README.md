@@ -21,6 +21,8 @@ Parses the following statements:
 
     attr_accessible :attr
 
+    attr_protected :attr
+
     cattr_reader :attr
 
     cattr_writer :attr
