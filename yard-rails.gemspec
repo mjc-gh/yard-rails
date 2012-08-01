@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "yard-rails"
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Charles H. Pence"]
-  s.date = "2011-11-10"
+  s.date = "2012-08-01"
   s.description = "Rails includes several bits of custom markup (such as the new \"cattr_*\" methods).  This plugin for YARD adds support for this custom markup, which otherwise is parsed incorrectly."
   s.email = "charles@charlespence.net"
   s.extra_rdoc_files = [
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".gemtest",
     ".specopts",
+    ".travis.yml",
     ".yardopts",
     "ChangeLog.md",
     "Gemfile",
@@ -36,7 +37,7 @@ Gem::Specification.new do |s|
     "spec/attr_accessible_handler_spec.rb",
     "spec/class_attribute_handler_spec.rb",
     "spec/helpers/examples.rb",
-    "spec/helpers/examples/simple_attr_accessible.rb.txt",
+    "spec/helpers/examples/attr_accessible_protected.rb.txt",
     "spec/helpers/examples/simple_cattrs.rb.txt",
     "spec/spec_helper.rb",
     "tasks/yard.rb",
@@ -45,7 +46,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/cpence/yard-rails"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.23"
   s.summary = "A YARD plugin for parsing custom Rails syntax."
 
   if s.respond_to? :specification_version then
