@@ -12,11 +12,11 @@ describe "AttrAccessibleHandler" do
       parse_file :simple_attr_accessible
     end
 
-    it "should define reader class method for the attr_accessible method" do
+    it "should define reader instance method for the attr_accessible method" do
       yard('SimpleAttrAccessible#test_attribute').should be_instance_of(CodeObjects::MethodObject)
     end
 
-    it "should define writer class method for the attr_accessible method" do
+    it "should define writer instance method for the attr_accessible method" do
       yard('SimpleAttrAccessible#test_attribute=').should be_instance_of(CodeObjects::MethodObject)
     end
   end
@@ -26,11 +26,11 @@ describe "AttrAccessibleHandler" do
       parse_file :simple_attr_accessible, true
     end
 
-    it "should define reader class method for the attr_accessible method" do
+    it "should define reader instance method for the attr_accessible method" do
       yard('SimpleAttrAccessible#test_attribute').should be_instance_of(CodeObjects::MethodObject)
     end
 
-    it "should define writer class method for the attr_accessible method" do
+    it "should define writer instance method for the attr_accessible method" do
       yard('SimpleAttrAccessible#test_attribute=').should be_instance_of(CodeObjects::MethodObject)
     end
   end
